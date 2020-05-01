@@ -1,6 +1,6 @@
 ## War Games
 
-This command builds upon the [Say example](./Say.md), but adds multiple buttons, action parameters and a `text-field` control.
+This command builds upon the [Say example](./Say.md), by adding multiple buttons, action parameters and a `text-field` control.
 
 The user can enter text into a `text-field` control and choose what voice is used to speak the string.
 
@@ -38,9 +38,9 @@ Sets the name of the running Suitcase, this is also used for the main window tit
       --control-type="text-field" 
       --control-identifier="say.textfield" 
 
-These 3 lines define the `text-field`. The first two we encountered in the [Say example](./Say.md), `--control-title` and `--control-type` set the placeholder text and control type respectively. The third option, `--control-identifier`, sets the contol's identifier. A control's identifier can be used other controls and actions to reference a control during execution. 
+These 3 lines define the `text-field`. The first two we encountered in the [Say example](./Say.md), `--control-title` and `--control-type` set the placeholder text and control type respectively. The third option, `--control-identifier`, sets the contol's identifier. An identifier can be used by other controls and actions to reference a control during execution. 
 
-In this example the identifier, "say.textfield" is used to read the value of the `text-field` and pass it to the [`say`](x-man-page://say) command.
+In this example the identifier value, "say.textfield", is used to read the value of the `text-field` and pass it to the [`say`](x-man-page://say) command.
 
     --control-title="Daniel"
 	  --control-type="button"
